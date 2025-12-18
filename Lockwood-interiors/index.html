@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lockwood Interiors | Step on something special !</title>
+
+  <meta name="description" content="Premium wooden flooring, decking and cladding solutions by Lockwood Interiors in India.">
+  <meta name="keywords" content="wooden flooring, decking, ipe wood, thermo ash, parquet flooring, SPC flooring, wall cladding, interiors">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f4f1ee;
+      color: #2c2c2c;
+    }
+
+    /* ================= HEADER ================= */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 50px;
+      background: rgba(62,39,35,0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      color: #fff;
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #c49b63;
+    }
+
+    /* ================= HERO VIDEO ================= */
+    .hero-image {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("assets/images/parquet-hero.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+    .hero-content {
+      max-width: 750px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #c49b63;
+      padding: 8px 22px;
+      border-radius: 30px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .slider-text {
+      position: relative;
+      height: 60px;
+      overflow: hidden;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      animation: slideText 9s infinite;
+    }
+
+    .slide:nth-child(1) { animation-delay: 0s; }
+    .slide:nth-child(2) { animation-delay: 3s; }
+    .slide:nth-child(3) { animation-delay: 6s; }
+
+    .hero-content p {
+      font-size: 18px;
+      opacity: 0.95;
+      margin-bottom: 30px;
+    }
+
+    .cta {
+      display: inline-block;
+      background: #c49b63;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      transform: scale(1.05);
+    }
+
+    /* ================= SECTIONS ================= */
+    .section {
+      padding: 100px 50px 70px;
+      background: #fff;
+    }
+
+    .section h3 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fafafa;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background: #3e2723;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+
+    /* ================= FLOATING BUTTONS ================= */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: #fff;
+      padding: 14px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      z-index: 999;
+    }
+
+    .instagram-btn {
+      position: fixed;
+      right: 20px;
+      bottom: 90px;
+      background: #E1306C;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 999;
+    }
+
+    /* ================= ANIMATIONS ================= */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideText {
+      0% { opacity:0; transform: translateY(30px); }
+      10% { opacity:1; transform: translateY(0); }
+      30% { opacity:1; }
+      40% { opacity:0; transform: translateY(-30px); }
+      100% { opacity:0; }
+    }
+
+    /* ================= MOBILE ================= */
+    @media(max-width:768px){
+      header { padding: 12px 20px; }
+      .slider-text { font-size: 28px; }
+      .section { padding: 80px 20px 60px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>LOCKWOOD INTERIORS</h1>
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="assets/about.html">About</a>
+  <a href="assets/services.html">Services</a>
+  <a href="assets/contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero-image">
+  <div class="hero-content">
+    <div class="badge">FREE DESIGN CONSULTATION</div>
+
+    <div class="slider-text">
+      <div class="slide">Transform Your Space</div>
+      <div class="slide">Premium Parquet Flooring</div>
+      <div class="slide">Luxury Wooden Interiors</div>
+    </div>
+
+    <p>
+      Discover premium parquet wooden flooring and interior solutions
+      crafted to bring timeless elegance into your space.
+    </p>
+
+    <a href="#contact" class="cta">Step on something special</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h3>About Lockwood Interiors</h3>
+  <div class="about">
+    <p style="font-size:17px; line-height:1.7;">
+      At Lockwood Interiors, we are your one-stop destination for transforming spaces with natural elegance and     enduring style. As a trusted name in premium flooring, decking solutions, we take pride in offering a diverse portfolio of products tailored to meet both modern and traditional design preferences.
+Whether you're revamping your home, building your dream office, or curating an inspiring commercial environment, our passionate team is committed to delivering flawless finishes, superior craftsmanship, and timely execution — every single time.
+Let us help you turn ordinary spaces into extraordinary experiences.
+
+    </p>
+    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c">
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h3>Our Expertise</h3>
+  <div class="services">
+    <div class="card"><h4>Hardwood & Engineered Flooring</h4></div>
+    <div class="card"><h4>SPC & Laminate Flooring</h4></div>
+    <div class="card"><h4>Decking & Exterior Wood</h4></div>
+    <div class="card"><h4>Wall & Ceiling Cladding</h4></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="background:#f7f3f0;">
+  <h3>Contact Us</h3>
+  <p style="text-align:center; font-size:17px;">
+    📞 +91 9953115323<br><br>
+    📧 lockwoodinterior@gmail.com
+  </p>
+</section>
+
+<footer>
+  © 2025 Lockwood Interiors | Step on Something Special
+</footer>
+
+<a href="https://www.instagram.com/lockwood.interiors" target="_blank" class="instagram-btn">📸 Instagram</a>
+<a href="https://wa.me/919953115323" target="_blank" class="whatsapp">💬 WhatsApp</a>
+
+</body>
+</html>

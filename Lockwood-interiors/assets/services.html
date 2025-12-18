@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Services - Lockwood Interiors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',Arial,sans-serif;}
+    body{background:#efebe7;color:#333;}
+
+    /* Header */
+    header{
+      background:rgba(62,39,35,0.95);
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      font-size:22px;
+      letter-spacing:2px;
+      position:sticky;
+      top:0;
+      z-index:999;
+      backdrop-filter:blur(10px);
+    }
+
+    /* Hero intro */
+    .hero{
+      text-align:center;
+      padding:80px 20px 40px;
+      animation:fadeIn 1.1s ease;
+    }
+
+    .hero h1{
+      font-size:42px;
+      color:#3e2723;
+      margin-bottom:12px;
+    }
+
+    .hero p{
+      max-width:800px;
+      margin:auto;
+      font-size:18px;
+      opacity:.85;
+    }
+
+    /* Grid */
+    .grid{
+      max-width:1200px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+      padding:40px 20px 80px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:20px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.07);
+      transform:translateY(50px);
+      opacity:0;
+      animation:slideUp .9s ease forwards;
+    }
+
+    .card:nth-child(1){animation-delay:.1s;}
+    .card:nth-child(2){animation-delay:.2s;}
+    .card:nth-child(3){animation-delay:.3s;}
+    .card:nth-child(4){animation-delay:.4s;}
+    .card:nth-child(5){animation-delay:.5s;}
+    .card:nth-child(6){animation-delay:.6s;}
+    .card:nth-child(7){animation-delay:.7s;}
+    .card:nth-child(8){animation-delay:.8s;}
+    .card:nth-child(9){animation-delay:.9s;}
+    .card:nth-child(10){animation-delay:1s;}
+    .card:nth-child(11){animation-delay:1.1s;}
+    .card:nth-child(12){animation-delay:1.2s;}
+
+    .num{
+      font-size:20px;
+      font-weight:bold;
+      color:#c49b63;
+      margin-bottom:10px;
+      letter-spacing:2px;
+    }
+
+    .card h3{
+      color:#3e2723;
+      margin-bottom:10px;
+      font-size:20px;
+    }
+
+    .card p{
+      font-size:15px;
+      line-height:1.6;
+      color:#555;
+    }
+
+    /* Animations */
+    @keyframes slideUp{
+      to{
+        transform:translateY(0);
+        opacity:1;
+      }
+    }
+
+    @keyframes fadeIn{
+      from{opacity:0;}
+      to{opacity:1;}
+    }
+
+    /* Floating Buttons */
+    .instagram{
+      position:fixed;
+      bottom:95px;
+      right:20px;
+      background:#E1306C;
+      color:white;
+      padding:14px 22px;
+      border-radius:40px;
+      font-weight:bold;
+      text-decoration:none;
+      box-shadow:0 10px 30px rgba(0,0,0,.2);
+    }
+
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      width:62px;
+      height:62px;
+      background:#25D366;
+      color:white;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30px;
+      text-decoration:none;
+    }
+
+    @media(max-width:768px){
+      .hero h1{font-size:32px;}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>LOCKWOOD INTERIORS</header>
+
+<section class="hero">
+  <h1>Our Premium Services</h1>
+  <p>Luxury flooring and interior solutions designed to bring nature, warmth and timeless elegance into your spaces.</p>
+</section>
+
+<div class="grid">
+
+  <div class="card"><div class="num">01</div><h3>Hardwood Flooring</h3><p>Natural hardwood floors offering warmth, durability and timeless beauty.</p></div>
+  <div class="card"><div class="num">02</div><h3>Parquet Flooring</h3><p>Decorative geometric wooden patterns for luxury interiors.</p></div>
+
+  <div class="card"><div class="num">03</div><h3>Engineered Wood Flooring</h3><p>High-performance, stable and stylish flooring solutions.</p></div>
+  <div class="card"><div class="num">04</div><h3>Junckers Flooring</h3><p>Advanced engineered flooring with waterproof technology.</p></div>
+
+  <div class="card"><div class="num">05</div><h3>Laminate Wooden Flooring</h3><p>Affordable, beautiful and low-maintenance wood-look floors.</p></div>
+  <div class="card"><div class="num">06</div><h3>SPC Flooring</h3><p>100% waterproof, scratch-resistant flooring for heavy-use areas.</p></div>
+
+  <div class="card"><div class="num">07</div><h3>Ipe Wood Decking</h3><p>Premium hardwood decking for outdoor luxury spaces.</p></div>
+  <div class="card"><div class="num">08</div><h3>Pine Wood Cladding</h3><p>Durable and aesthetic wall and ceiling cladding solutions.</p></div>
+
+  <div class="card"><div class="num">09</div><h3>Thermo Ash Wood</h3><p>Heat-treated premium wood with superior stability and resistance.</p></div>
+  <div class="card"><div class="num">10</div><h3>Carpet Flooring</h3><p>Soft, warm and elegant floor covering solutions.</p></div>
+
+  <div class="card"><div class="num">11</div><h3>Charcoal Panels</h3><p>Modern textured wall panels for premium interiors.</p></div>
+  <div class="card"><div class="num">12</div><h3>Exclusive Wallpapers</h3><p>Designer wallpapers to enhance luxury and ambiance.</p></div>
+
+</div>
+
+<a href="https://instagram.com/lockwood.interiors" target="_blank" class="instagram">📸 Follow Us</a>
+<a href="https://wa.me/919953115323" target="_blank" class="whatsapp">🟢</a>
+
+</body>
+</html>
