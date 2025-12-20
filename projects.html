@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Our Projects | Lockwood Interiors</title>
+
+<link rel="canonical" href="https://lockwoodinterior-droid.github.io/lockwoodinterior/projects.html">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f2efeb;color:#2c2c2c;}
+
+header{
+  background:#3e2723;
+  color:#fff;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:15px;
+  font-size:14px;
+}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 20px;
+  text-align:center;
+}
+
+h1{margin-bottom:30px;}
+
+.slider{
+  max-width:900px;
+  margin:0 auto 50px;
+  overflow:hidden;
+  border-radius:15px;
+}
+
+.slides{
+  display:flex;
+  width:500%;
+  animation:slide 20s infinite;
+}
+
+.slides img{
+  width:100%;
+  height:450px;
+  object-fit:cover;
+}
+
+@keyframes slide{
+  0%{transform:translateX(0);}
+  20%{transform:translateX(0);}
+  25%{transform:translateX(-100%);}
+  45%{transform:translateX(-100%);}
+  50%{transform:translateX(-200%);}
+  70%{transform:translateX(-200%);}
+  75%{transform:translateX(-300%);}
+  95%{transform:translateX(-300%);}
+  100%{transform:translateX(-400%);}
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.grid img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.caption{margin-top:8px;font-weight:600;}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:30px;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <strong>LOCKWOOD INTERIORS</strong>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="container">
+<h1>Our Projects</h1>
+
+<!-- SLIDER -->
+<div class="slider">
+  <div class="slides">
+    <img src="assets/images/project1.jpg" alt="Shanti Niketan">
+    <img src="assets/images/project2.jpg" alt="Gurugram Sec 29">
+    <img src="assets/images/project3.jpg" alt="Chattarpur">
+    <img src="assets/images/project4.jpg" alt="Greater Noida">
+    <img src="/lockwoodinterior/assets/images/project5.jpg" alt="Sainik Farm">
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="grid">
+  <div>
+    <img src="assets/images/project1.jpg" alt="Shanti Niketan">
+    <div class="caption">Shanti Niketan</div>
+  </div>
+
+  <div>
+    <img src="assets/images/project2.jpg" alt="Gurugram">
+    <div class="caption">Gurugram</div>
+  </div>
+
+  <div>
+    <img src="assets/images/project3.jpg" alt="Noida">
+    <div class="caption">Noida</div>
+  </div>
+
+  <div>
+    <img src="assets/images/project4.jpg" alt="Sainik Farm">
+    <div class="caption">Sainik Farm</div>
+  </div>
+
+  <div>
+    <img src="assets/images/project5.jpg" alt="Delhi">
+    <div class="caption">Delhi</div>
+  </div>
+</div>
+</div>
+
+<a href="https://wa.me/919953115323" class="whatsapp">💬</a>
+
+</body>
+</html>
