@@ -1,216 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <title>Lockwood Interiors | Premium Wooden Flooring</title>
-
-  <link rel="canonical" href="https://lockwoodinterior-droid.github.io/lockwoodinterior/">
-
-  <meta name="description" content="Premium wooden flooring, parquet flooring, decking & cladding by Lockwood Interiors. Bringing Nature into the World.">
-  <meta name="keywords" content="parquet flooring, wooden flooring, wood decking, wood cladding, Lockwood Interiors">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      body {
-      font-family: 'Poppins', sans-serif;
-}
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background: #f4f1ee;
-      color: #2c2c2c;
-    }
-
-    header {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 15px 50px;
-      background: rgba(62,39,35,0.95);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    header h1 {
-      color: #fff;
-      font-size: 22px;
-    }
-
-    nav a {
-      color: #fff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #c49b63;
-    }
-
-    .hero-image {
-      height: 100vh;
-      background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("assets/images/parquet-hero.jpg");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-
-    .hero-content {
-      max-width: 750px;
-      padding: 20px;
-    }
-
-    .badge {
-      background: #c49b63;
-      padding: 8px 22px;
-      border-radius: 30px;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-
-    .slider-text {
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 15px;
-    }
-
-    .cta {
-      background: #c49b63;
-      color: #fff;
-      padding: 14px 32px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-    }
-
-    .section {
-      padding: 100px 50px;
-      background: #fff;
-    }
-
-    footer {
-      background: #3e2723;
-      color: #fff;
-      text-align: center;
-      padding: 25px;
-    }
-
-    .whatsapp {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      color: #fff;
-      padding: 14px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-    }
-
-    .instagram-btn {
-      position: fixed;
-      right: 20px;
-      bottom: 90px;
-      background: #E1306C;
-      color: #fff;
-      padding: 12px 18px;
-      border-radius: 30px;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lockwood Interiors | Premium Wood Flooring, Decking & Cladding for Trade & Retail</title>
+<meta name="description" content="Lockwood Interiors supplies and installs premium hardwood, parquet, engineered and SPC flooring, decking and cladding across Delhi NCR — trusted by architects, interior designers, builders, contractors and retail clients.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <h1>LOCKWOOD INTERIORS</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav" id="nav">
+    <a class="logo" href="index.html">LOCKWOOD <span>INTERIORS</span></a>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="trade.html">For Trade Partners</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request a Quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
 </header>
 
-<section class="hero-image">
-  <div class="hero-content">
-    <div class="badge">FREE DESIGN CONSULTATION</div>
-    <div class="slider-text">Premium Wooden Flooring</div>
-    <p>Discover premium parquet wooden flooring and interior solutions.</p>
-    <a href="contact.html" class="cta">Step on something special</a>
+<section class="hero herringbone">
+  <div class="wrap">
+    <div class="eyebrow">Delhi NCR · Since flooring became furniture-grade</div>
+    <h1>Premium wood flooring, decking &amp; cladding — built to spec, delivered on schedule.</h1>
+    <p>We supply and install hardwood, parquet, engineered, laminate and SPC flooring, decking and wall cladding for homes, offices and retail spaces — with dedicated support for architects, interior designers, builders and contractors.</p>
+    <div class="hero-actions">
+      <a class="btn btn-solid" href="trade.html">Trade &amp; Bulk Pricing</a>
+      <a class="btn btn-outline" href="projects.html">See Our Work</a>
+    </div>
   </div>
 </section>
 
-<section class="section" id="testimonials">
-  <h3>What Our Clients Say</h3>
+<div class="plank-rule">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
 
-  <div class="services">
+<section class="audience">
+  <div class="wrap">
+    <div><strong>Architects</strong><small>Spec sheets, samples &amp; CAD details on request</small></div>
+    <div><strong>Interior Designers</strong><small>Curated finishes &amp; fast sample turnaround</small></div>
+    <div><strong>Builders &amp; Contractors</strong><small>Site-ready delivery &amp; installation crews</small></div>
+    <div><strong>Retail &amp; Commercial</strong><small>High-traffic rated flooring &amp; cladding</small></div>
+  </div>
+</section>
 
-    <div class="card">
-      <p style="font-size:16px; line-height:1.6;">
-        “Lockwood Interiors delivered exceptional parquet flooring for our
-        residence. The finish, quality, and attention to detail were
-        outstanding.”
-      </p>
-      <p style="margin-top:15px; font-weight:600;">
-        — Rajiv Malhotra, Shanti Niketan
-      </p>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">What We Do</span>
+      <h2>Twelve flooring &amp; surface systems, one point of contact</h2>
+      <p>From natural hardwood to waterproof SPC, every product is sourced, supplied and installed by our own team — no subcontracting the finish.</p>
     </div>
-
-    <div class="card">
-      <p style="font-size:16px; line-height:1.6;">
-        “From consultation to installation, the entire process was smooth
-        and professional. Truly premium wooden flooring solutions.”
-      </p>
-      <p style="margin-top:15px; font-weight:600;">
-        — Neha Kapoor, Gurugram
-      </p>
+    <div class="grid grid-4">
+      <div class="card"><span class="num">01</span><h3>Hardwood Flooring</h3><p>Natural solid wood floors, warm and enduring.</p></div>
+      <div class="card"><span class="num">02</span><h3>Parquet Flooring</h3><p>Geometric wood patterns for statement interiors.</p></div>
+      <div class="card"><span class="num">03</span><h3>Engineered Wood</h3><p>Stable, high-performance layered flooring.</p></div>
+      <div class="card"><span class="num">04</span><h3>SPC Flooring</h3><p>100% waterproof, scratch-resistant, heavy-use rated.</p></div>
     </div>
+    <p style="margin-top:28px;"><a class="btn btn-outline" style="border-color:var(--oak);color:var(--oak);" href="services.html">View all 12 services →</a></p>
+  </div>
+</section>
 
-    <div class="card">
-      <p style="font-size:16px; line-height:1.6;">
-        “We chose Lockwood Interiors for our decking project and the results
-        exceeded expectations. Highly recommended for luxury interiors.”
-      </p>
-      <p style="margin-top:15px; font-weight:600;">
-        — Amit Verma, Noida
-      </p>
+<section style="background:var(--linen);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Recent Work</span>
+      <h2>Projects across Delhi NCR</h2>
     </div>
-
-    <div class="card">
-      <p style="font-size:16px; line-height:1.6;">
-        “Excellent craftsmanship, premium materials, and timely execution.
-        Lockwood Interiors truly brings nature into your space.”
-      </p>
-      <p style="margin-top:15px; font-weight:600;">
-        — Pooja Singh, South Delhi
-      </p>
+    <div class="grid grid-4">
+      <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project1.jpg" alt="Shanti Niketan residence flooring project" loading="lazy"><figcaption>Shanti Niketan · Residence</figcaption></figure>
+      <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project2.jpg" alt="Gurugram Sector 29 flooring project" loading="lazy"><figcaption>Gurugram · Sector 29</figcaption></figure>
+      <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project3.jpg" alt="Chattarpur flooring project" loading="lazy"><figcaption>Chattarpur · Villa</figcaption></figure>
+      <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project4.jpg" alt="Greater Noida flooring project" loading="lazy"><figcaption>Greater Noida</figcaption></figure>
     </div>
+    <p style="margin-top:28px;"><a class="btn btn-outline" style="border-color:var(--oak);color:var(--oak);" href="projects.html">View full project gallery →</a></p>
+  </div>
+</section>
 
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Client Voices</span>
+      <h2>What people say after the last plank is laid</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="testimonial"><p>"Lockwood Interiors delivered exceptional parquet flooring for our residence. The finish and attention to detail were outstanding."</p><cite>— Rajiv Malhotra, Shanti Niketan</cite></div>
+      <div class="testimonial"><p>"From consultation to installation, the entire process was smooth and professional."</p><cite>— Neha Kapoor, Gurugram</cite></div>
+      <div class="testimonial"><p>"We chose Lockwood Interiors for our decking project and the results exceeded expectations."</p><cite>— Amit Verma, Noida</cite></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Working on a project brief right now?</h2>
+    <p>Send us the drawings, area and finish preferences — we'll turn around a quote and sample box within 48 hours.</p>
+    <a class="btn btn-solid" href="contact.html">Get a Quote</a>
   </div>
 </section>
 
 <footer>
-  © 2025 Lockwood Interiors | Bringing Nature into the World
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="index.html" style="color:var(--fog);">LOCKWOOD <span style="color:var(--oak-light);">INTERIORS</span></a>
+      <p style="max-width:34ch;margin-top:14px;font-size:.88rem;">Premium wood flooring, decking, cladding and surface finishes for residential, commercial and retail spaces across Delhi NCR.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="trade.html">For Trade Partners</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+919953115323">+91 99531 15323</a>
+      <a href="mailto:lockwoodinterior@gmail.com">lockwoodinterior@gmail.com</a>
+      <a href="https://wa.me/919953115323">WhatsApp</a>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/lockwood.interiors">Instagram</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Lockwood Interiors · Bringing Nature into the World</span>
+    <span>Delhi NCR, India</span>
+  </div>
 </footer>
 
-<a href="https://www.instagram.com/lockwood.interiors" target="_blank" class="instagram-btn">Instagram</a>
-<a href="https://wa.me/919953115323" target="_blank" class="whatsapp">WhatsApp</a>
-
+<a class="wa-float" href="https://wa.me/919953115323" aria-label="Chat on WhatsApp">💬</a>
+<script src="script.js"></script>
 </body>
 </html>

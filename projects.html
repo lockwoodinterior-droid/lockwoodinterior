@@ -1,164 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-<title>Our Projects | Lockwood Interiors</title>
-
-<link rel="canonical" href="https://lockwoodinterior-droid.github.io/lockwoodinterior/projects.html">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#f2efeb;color:#2c2c2c;}
-
-header{
-  background:#3e2723;
-  color:#fff;
-  padding:15px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-header a{
-  color:#fff;
-  text-decoration:none;
-  margin-left:15px;
-  font-size:14px;
-}
-
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:40px 20px;
-  text-align:center;
-}
-
-h1{margin-bottom:30px;}
-
-.slider{
-  max-width:900px;
-  margin:0 auto 50px;
-  overflow:hidden;
-  border-radius:15px;
-}
-
-.slides{
-  display:flex;
-  width:500%;
-  animation:slide 20s infinite;
-}
-
-.slides img{
-  width:100%;
-  height:450px;
-  object-fit:cover;
-}
-
-@keyframes slide{
-  0%{transform:translateX(0);}
-  20%{transform:translateX(0);}
-  25%{transform:translateX(-100%);}
-  45%{transform:translateX(-100%);}
-  50%{transform:translateX(-200%);}
-  70%{transform:translateX(-200%);}
-  75%{transform:translateX(-300%);}
-  95%{transform:translateX(-300%);}
-  100%{transform:translateX(-400%);}
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.grid img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  border-radius:12px;
-}
-
-.caption{margin-top:8px;font-weight:600;}
-
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  width:60px;
-  height:60px;
-  background:#25D366;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-size:30px;
-  text-decoration:none;
-}
-</style>
+<title>Projects | Lockwood Interiors</title>
+<meta name="description" content="Flooring, decking and cladding projects delivered by Lockwood Interiors across Delhi NCR — Shanti Niketan, Gurugram, Noida, Chattarpur, Sainik Farm and Greater Noida.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <strong>LOCKWOOD INTERIORS</strong>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="nav" id="nav">
+    <a class="logo" href="index.html">LOCKWOOD <span>INTERIORS</span></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a class="active" href="projects.html">Projects</a></li>
+      <li><a href="trade.html">For Trade Partners</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request a Quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
 </header>
 
-<div class="container">
-<h1>Our Projects</h1>
-
-<!-- SLIDER -->
-<div class="slider">
-  <div class="slides">
-    <img src="assets/images/project1.jpg" alt="Shanti Niketan">
-    <img src="assets/images/project2.jpg" alt="Gurugram Sec 29">
-    <img src="assets/images/project3.jpg" alt="Chattarpur">
-    <img src="assets/images/project4.jpg" alt="Greater Noida">
-    <img src="/lockwoodinterior/assets/images/project5.jpg" alt="Sainik Farm">
+<section style="padding-top:64px;padding-bottom:40px;">
+  <div class="wrap section-head">
+    <span class="eyebrow">Our Projects</span>
+    <h1 style="font-size:clamp(2rem,4vw,2.8rem);">Recent installations across Delhi NCR</h1>
+    <p>A selection of residential and commercial flooring, decking and cladding projects. Ask us for the full portfolio and client references relevant to your project type.</p>
   </div>
-</div>
+</section>
 
-<!-- GALLERY -->
-<div class="grid">
-  <div>
-    <img src="assets/images/project1.jpg" alt="Shanti Niketan">
-    <div class="caption">Shanti Niketan</div>
+<section style="padding-top:0;">
+  <div class="wrap grid grid-3">
+    <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project1.jpg" alt="Shanti Niketan residence — parquet flooring" loading="lazy"><figcaption>Shanti Niketan · Residence · Parquet Flooring</figcaption></figure>
+    <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project2.jpg" alt="Gurugram Sector 29 — engineered wood flooring" loading="lazy"><figcaption>Gurugram Sector 29 · Engineered Wood</figcaption></figure>
+    <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project3.jpg" alt="Chattarpur villa — hardwood flooring" loading="lazy"><figcaption>Chattarpur · Villa · Hardwood</figcaption></figure>
+    <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project4.jpg" alt="Greater Noida — laminate flooring" loading="lazy"><figcaption>Greater Noida · Laminate Flooring</figcaption></figure>
+    <figure class="project"><img src="https://lockwoodinterior.in/assets/images/project5.jpg" alt="Sainik Farm — Ipe wood decking" loading="lazy"><figcaption>Sainik Farm · Ipe Wood Decking</figcaption></figure>
   </div>
+</section>
 
-  <div>
-    <img src="assets/images/project2.jpg" alt="Gurugram">
-    <div class="caption">Gurugram</div>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Want to see work similar to your project?</h2>
+    <p>Tell us your space type and finish preference — we'll share the closest matching case studies.</p>
+    <a class="btn btn-solid" href="contact.html">Request Case Studies</a>
   </div>
+</section>
 
-  <div>
-    <img src="assets/images/project3.jpg" alt="Noida">
-    <div class="caption">Noida</div>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="index.html" style="color:var(--fog);">LOCKWOOD <span style="color:var(--oak-light);">INTERIORS</span></a>
+      <p style="max-width:34ch;margin-top:14px;font-size:.88rem;">Premium wood flooring, decking, cladding and surface finishes for residential, commercial and retail spaces across Delhi NCR.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="trade.html">For Trade Partners</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+919953115323">+91 99531 15323</a>
+      <a href="mailto:lockwoodinterior@gmail.com">lockwoodinterior@gmail.com</a>
+      <a href="https://wa.me/919953115323">WhatsApp</a>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/lockwood.interiors">Instagram</a>
+    </div>
   </div>
-
-  <div>
-    <img src="assets/images/project4.jpg" alt="Sainik Farm">
-    <div class="caption">Sainik Farm</div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Lockwood Interiors · Bringing Nature into the World</span>
+    <span>Delhi NCR, India</span>
   </div>
+</footer>
 
-  <div>
-    <img src="assets/images/project5.jpg" alt="Delhi">
-    <div class="caption">Delhi</div>
-  </div>
-</div>
-</div>
-
-<a href="https://wa.me/919953115323" class="whatsapp">💬</a>
-
+<a class="wa-float" href="https://wa.me/919953115323" aria-label="Chat on WhatsApp">💬</a>
+<script src="script.js"></script>
 </body>
 </html>

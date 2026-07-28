@@ -1,108 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <link rel="canonical" href="https://lockwoodinterior-droid.github.io/lockwoodinterior/assets/about/about.html">
-
-  <meta charset="UTF-8">
-  <title>About Us - Lockwood Interiors</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    .box {
-      max-width: 900px;
-      margin: 60px auto;
-      background: white;
-      padding: 45px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    h1 {
-      text-align: center;
-      font-weight: 600;
-      margin-bottom: 25px;
-      letter-spacing: 0.5px;
-    }
-
-    p {
-      text-align: left;
-      line-height: 1.8;
-      font-size: 16px;
-      font-weight: 400;
-    }
-
-    .btn-download {
-      background: #c49b63;
-      color: white;
-      padding: 15px 32px;
-      text-decoration: none;
-      border-radius: 30px;
-      display: inline-block;
-      margin-top: 30px;
-      font-weight: 600;
-      transition: 0.3s ease;
-    }
-
-    .btn-download:hover {
-      transform: scale(1.05);
-      background: #b08a55;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Lockwood Interiors</title>
+<meta name="description" content="Lockwood Interiors is a Delhi NCR based flooring, decking and cladding company serving homeowners, architects, interior designers, builders and retail clients.">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="box">
-  <h1>About Lockwood Interiors</h1>
+<header>
+  <div class="nav" id="nav">
+    <a class="logo" href="index.html">LOCKWOOD <span>INTERIORS</span></a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="trade.html">For Trade Partners</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="contact.html">Request a Quote</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
 
-  <p>
-    At Lockwood Interiors, we are your one-stop destination for transforming spaces
-    with natural elegance and enduring style. As a trusted name in premium flooring
-    and decking solutions, we offer a diverse portfolio of products tailored to both
-    modern and traditional design preferences.<br><br>
+<section style="padding-top:64px;">
+  <div class="wrap two-col">
+    <div>
+      <span class="eyebrow">About Lockwood Interiors</span>
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem);">Bringing nature into the spaces people build, sell and live in.</h1>
+      <p>Lockwood Interiors supplies and installs premium wood flooring, decking, cladding and surface finishes across Delhi NCR. We work directly with homeowners as well as the architects, interior designers, builders and contractors who bring their projects to life — and with retail teams fitting out new stores.</p>
+      <p>Every product that leaves our workshop is measured, cut and installed by our own team. We don't hand the finish off to a third party, which is how we hold the same standard whether the job is a single living room or a full commercial fit-out.</p>
+      <a class="btn btn-solid" style="background:var(--espresso);color:var(--fog);" href="company-profile.pdf">Download Company Profile</a>
+    </div>
+    <div class="herringbone" style="aspect-ratio:1/1;border-radius:var(--radius);"></div>
+  </div>
+</section>
 
-    Whether you're revamping your home, building your dream office, or curating an
-    inspiring commercial environment, our passionate team is committed to delivering
-    flawless finishes, superior craftsmanship, and timely execution — every single time.
-    Let us help you turn ordinary spaces into extraordinary experiences.
-  </p>
+<section style="background:var(--linen);">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">How We Work</span>
+      <h2>From site visit to handover</h2>
+      <p>A genuine sequence — each step depends on the one before it.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><span class="num">01 · Brief &amp; site visit</span><h3>We measure the space and understand use, footfall and finish preferences.</h3></div>
+      <div class="tl-item"><span class="num">02 · Samples &amp; spec</span><h3>You choose from our finish library; we confirm technical specs and BOQ.</h3></div>
+      <div class="tl-item"><span class="num">03 · Supply</span><h3>Material is sourced and delivered in phases that match your site schedule.</h3></div>
+      <div class="tl-item"><span class="num">04 · Installation</span><h3>Our own crews install, finish and clear the site.</h3></div>
+      <div class="tl-item"><span class="num">05 · Handover &amp; care</span><h3>Walkthrough, maintenance guidance, and warranty documentation.</h3></div>
+    </div>
+  </div>
+</section>
 
-  <a href="company-profile.pdf" download class="btn-download">
-    Download Company Profile
-  </a>
-</div>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Have a project in mind?</h2>
+    <p>Whether it's one room or a full building, we'd like to hear about it.</p>
+    <a class="btn btn-solid" href="contact.html">Start a Conversation</a>
+  </div>
+</section>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/919953115323" target="_blank"
-style="
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 8px 20px rgba(0,0,0,0.25);
-">
-🟢
-</a>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <a class="logo" href="index.html" style="color:var(--fog);">LOCKWOOD <span style="color:var(--oak-light);">INTERIORS</span></a>
+      <p style="max-width:34ch;margin-top:14px;font-size:.88rem;">Premium wood flooring, decking, cladding and surface finishes for residential, commercial and retail spaces across Delhi NCR.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="trade.html">For Trade Partners</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+919953115323">+91 99531 15323</a>
+      <a href="mailto:lockwoodinterior@gmail.com">lockwoodinterior@gmail.com</a>
+      <a href="https://wa.me/919953115323">WhatsApp</a>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/lockwood.interiors">Instagram</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Lockwood Interiors · Bringing Nature into the World</span>
+    <span>Delhi NCR, India</span>
+  </div>
+</footer>
 
+<a class="wa-float" href="https://wa.me/919953115323" aria-label="Chat on WhatsApp">💬</a>
+<script src="script.js"></script>
 </body>
 </html>
